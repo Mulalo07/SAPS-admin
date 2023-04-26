@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/bullets&firearm.webp);
+    background-size: cover;
+    background-size: cover;
+    position: relative;
+    
+}
+
+
+
+/* ------SAPS login page---------*/
+
+/*Container*/
+ .login_container {
+  display: flex;
+  height: 500px;
+  width: 800px;
+  border: #000 0.5px solid;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 50px;
+  background:rgba(4, 9, 30, 0.7);
+ }
+
+ /*Login Form*/
+ .form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  color: white;
+
+ 
+ }
+
+ .form h3 {
+  font-size: 1.5rem;
+  margin: 25px;
+
+ }
+
+
+
+
+ .form p {
+  font-size: 12px;
+ }
+
+ .box{
+  padding: 12px;
+  width: 65%;
+  margin: 10px;
+  border: #000 1px solid;
+  outline: none;
+  border-radius: 7px;
+
+ }
+
+ #submit {
+   padding: 10px 20px;
+   width: 40%;
+   margin: 25px;
+   background-color: #272360;
+   color: white;
+   border-radius: 6px;
+   border: none;
+   outline: none;
+ }
+
+ #submit:hover {
+  cursor: pointer;
+  color: #8DC8CC;
+ 
+ }
+
+ .form a {
+  text-decoration: none;
+  color: #000;
+  font-size: 10px;
+  margin-left: 50px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+ }
+
+ .form a:hover {
+  color: #8DC8CC;
+ }
+
+ @media(max-width: 700px){
+   .login_container {
+    margin-top: 50%;
+   }
+ }
+
+ /*Right Side of the container*/
+
+ .side{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+ }
+
+ .side img {
+  width: 300px;
+  height: 300px;
+ }
+
+
+
+
+
+
+
+/*-------Dashboard Section on the sidebar-------*/
+
+ header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: #f4f8fb;
+    display: flex;
+ }
+ 
+
+ aside {
+   display: flex;
+    width: 15%;
+    height: 100%;
+    background: #fff;
+    padding: 15px 0px 15px 30px;
+   
+    margin-left: 50px;
+ }
+
+ header section {
+    position: relative;
+    width:100% ;
+    height: 100%;
+    
+  
+ }
+
+aside ul {
+    list-style-type: none;
+    margin-top: 0px;
+}
+
+ aside ul li{
+   padding: 8px 0;
+   margin-top: 12px;
+}
+
+aside ul li a{
+   text-decoration: none;
+   color: rgb(0, 0,  .5);
+   font-size: 14px;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   transition: .3s linear;
+ }
+
+  aside ul li a:hover{
+    color: #8DC8CC;
+  }
+
+  /* Navbar*/
+  header section nav {
+    width: 100%;
+    height: 15%;
+    background: #272360;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+
+  header section nav ul {
+   list-style: none;
+   display: flex;
+   align-items: center;
+
+  }
+
+  header section nav ul li {
+   padding: 3px 25px 3px 0;
+    
+   }
+
+   header section nav ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    transition: .3s linear; 
+   }
+
+   header section nav ul li a:hover{
+   columns: gray; }
+
+   header section nav .search-bar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+header section nav .search-bar .bi{
+   
+    font-size: 14px;
+ }
+
+header section nav .search-bar input{
+   width: 90%;
+   padding: 3px 15px;
+   border: none;
+   outline:none;
+   font-size: 12px;
+   background: none;
+}
+
+header section nav .user{
+   display: flex;
+   align-items: center;
+   color: white;
+
+ }
+
+  
+
+ 
+ header section nav .user img{
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+
+ }
+
+ header section nav .user img{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+  
+   }
+
+
+   @media(max-width: 700px){
+    header section nav .search-bar{
+      display:;
+    }
+   }
+
+ /*Sidebar*/
+
+.sidebar_and_content{
+    display: flex;
+    margin-top: 30px;
+   
+    margin-left: 50px;
+   
+  }
+
+  .sidebar_and_content aside {
+    border-radius: 10px 0px 0px 10px;
+  }
+
+ 
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 10px;
+      padding: 10px;
+      background-color: #f2f2f2;
+      width: 70%;
+      border-radius: 0px 10px 10px 0px;
+    
+    }
+    
+    .grid-item {
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+/* Applicant's Side bar */
+
+.applicants_sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  padding: 15px;
+  border: none;
+}
+
+.applicants_sidebar input {
+  border: none;
+}
+
+.applicants_sidebar h4 {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.applicant_name {
+  padding: 7px;
+  margin: 10px;
+}
+
+.applicant_filter{
+  padding: 7px;
+  margin: 10px;
+}
+
+.applicants_sidebar ul{
+ list-style-type: none;
+ margin-top: 5px;
+}
+
+.applicants_sidebar ul li {
+  padding: 8px 8px;
+  margin-top: 8px;
+}
+
+.applicants_sidebar ul li a {
+ text-decoration: none;
+ color: rgb(0, 0,  .5);
+ font-size: 14px;
+}
+
+.applicants_sidebar ul li a:hover{
+  color:
+   #8DC8CC;
+}
+
+.clients {
+  display: flex;
+  background-color: whitesmoke;
+  width: 700px;
+  border-radius: 0px 10px 10px 0px;
+ 
+}
+
+.clients table {
+ width: 100%;
+ 
+
+ 
+}
+
+td {
+  font-size: 12px;
+  text-align: left;
+  padding: 5px;
+  color: #4C4C4C;
+}
+
+th {
+  position: sticky;
+  top: 0px;
+  
+}
+
+.clients-list{
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-top: 20px;
+  
+}
+
+/* Applicant's detailed info */
+
+.applicants_info{
+  display: flex;
+  background: #f5f5f5;
+  width: 70%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.applicants_info p{
+  margin: 12px 20px;
+  color: #4C4C4C;
+  
+}
+
+
+.applicant_details {
+  position: absolute;
+  bottom: 0;
+ 
+  
+  width: 860px;
+ }
+
+.applicant_details input  {
+  margin: 10px;
+  justify-content: space-between;
+  
+
+}
+
+#reject {
+  padding: 15px 90px;
+  margin-left: 30px;
+  background: #e5e5e5;
+  border: none;
+ color: #4C4C4C;
+ border-radius: 6px;
+ font-size: 13px;
+}
+
+#submit-applicant{
+  padding: 15px 90px;
+  margin-left: 50px;
+  background: #8DC8CC;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+#approve{
+  padding: 15px 90px;
+  margin-left: 50px;
+  background: #8DC8CC;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+
+/* Users Section */
+
+.users{
+background: whitesmoke;
+width: 70%;
+border-radius: 0px 25px 25px 0px ;
+
+}
+.users-details table {
+  width: 100%;
+  
+}
+
+.users-details{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+
+}
+
+.users form {
+ border-bottom: #000;
+ margin-top: 20px;
+ margin-bottom: 40px;
+ 
+}
+
+.users form p {
+ color: #4C4C4C;
+ margin: 5px 10px;
+}
+
+#new-user {
+  margin-left: 370px;
+  padding: 10px 20px;
+  background: #8DC8CC;
+  color: white;
+  border: none;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+#download {
+ margin-left: 35px;
+ padding: 10px 20px;
+ background: #D9D9D9;
+ color: white;
+ border: none;
+ align-items: center;
+ border-radius: 4px;
+ font-size: 15px;
+ margin-bottom: 20px;
+}
+
+.users-table table {
+  margin-left: 20px;
+}
+
+
+/* Report Section */
+
+.report_section {
+ display: flex;
+ background: whitesmoke;
+ width: 70%;
+ border-radius: 0px 10px 10px 0px;
+
+}
+
+.report_section p {
+ margin-top: 20px;
+  margin-left: 40px;
+}
+
+
+
+
+
+
+
